@@ -1,0 +1,91 @@
+mixin header()
+    header.header(data-module="header")
+        .navbar-wrap
+            .navbar.navbar_full-width.bg-pattern(data-js='navbar')
+                .container
+                    .row.-around.no-gutters.navbar-inner
+                        .navbar_block.navbar_panel
+                            +header-logo
+                            button.menu-btn.btn-pure
+                                +hamburger
+                        .navbar_block.navbar_contact-box-wrap
+                            .contact-box
+                                i.icon.icon-phone-call
+                                dl
+                                    dt Позвоните Нам:
+                                    dd
+                                    a(href="callto:#") +7(978) xxx xx xx
+                        .navbar_block.navbar_nav-wrap
+                            +menu({
+                                mobile: true,
+                                data: [
+                                    {
+                                        title: 'Заказ такси',
+                                        link: '/',
+                                        active: true
+                                    },
+                                    {
+                                        title: 'Тарифы',
+                                        link: '/'
+                                    },
+                                    {
+                                        title: 'Автопарк',
+                                        link: '/'
+                                    },
+                                    {
+                                        title: 'Наши услуги',
+                                        link: '/'
+                                    },
+                                    {
+                                        title: 'О нас',
+                                        link: '/'
+                                    },
+                                    {
+                                        title: 'Контакты',
+                                        link: '/'
+                                    }
+                                ]
+                            })
+            .navbar.navbar_is-sticky.navbar_full-width(data-js='navbarSticky')
+                .container
+                    .row.-around.no-gutters.navbar-inner
+                        .navbar_block.navbar_panel
+                            +header-logo
+                        .navbar_block.navbar_contact-box-wrap
+                            .contact-box
+                                i.icon.icon-phone-call
+                                dl
+                                    dt Позвоните Нам:
+                                    dd
+                                    a(href="callto:#") +7(978) xxx xx xx
+                        .navbar_block.navbar_nav-wrap
+                            +menu({
+                                mobile: false,
+                                data: [
+                                    {
+                                        title: 'Заказ такси',
+                                        link: '/',
+                                        active: true
+                                    },
+                                    {
+                                        title: 'Тарифы',
+                                        link: '/'
+                                    },
+                                    {
+                                        title: 'Автопарк',
+                                        link: '/'
+                                    },
+                                    {
+                                        title: 'Наши услуги',
+                                        link: '/'
+                                    },
+                                    {
+                                        title: 'О нас',
+                                        link: '/'
+                                    },
+                                    {
+                                        title: 'Контакты',
+                                        link: '/'
+                                    }
+                                ]
+                            })

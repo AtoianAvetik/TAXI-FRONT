@@ -1,0 +1,41 @@
+@font-face {
+	font-family: 'iconFont';
+	src: url('iconFont.eot?1524312946');
+	src: url('iconFont.eot?1524312946#iefix') format('embedded-opentype'),
+		 url('iconFont.svg?1524312946#iconFont') format('svg'),
+		 url('iconFont.woff?1524312946') format('woff'),
+		 url('iconFont.woff?1524312946') format('woff2'),
+		 url('iconFont.ttf?1524312946') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[data-icon]:before {
+	font-family: "iconFont" !important;
+	content: attr(data-icon);
+	font-style: normal !important;
+	font-weight: normal !important;
+	font-variant: normal !important;
+	text-transform: none !important;
+	speak: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+	font-family: "iconFont" !important;
+	font-style: normal !important;
+	font-weight: normal !important;
+	font-variant: normal !important;
+	text-transform: none !important;
+	speak: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/*----icon classes-----*/
+
+.icon-phone-call:before { content: "\E000"; }

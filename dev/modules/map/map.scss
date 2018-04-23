@@ -1,0 +1,7 @@
+.map{
+    @include aspect-ratio(16,9);
+
+    &_inner{
+        @include overlay;
+    }
+}

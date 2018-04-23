@@ -1,0 +1,95 @@
+mixin controls()
+    .controls
+        .container.m-gap
+            h2.h2.-underline Buttons
+            .row
+                .col-12
+                    h3.h5 Base buttons
+                    a(href="#").btn-default Default
+                    button.btn-primary Primary
+                    button.btn-red Red button
+                    button.btn-green Green button
+                    button.btn-blue Blue button
+                    button.btn-dark Dark
+                    button.btn-light Light
+            br
+            br
+            .row
+                .col-12
+                    h3.h5 Rounded buttons
+                    a(href="#").btn-default.-rounded Default
+                    button.btn-primary.-rounded Primary
+                    button.btn-red.-rounded Red button
+                    button.btn-green.-rounded Green button
+                    button.btn-blue.-rounded Blue button
+                    button.btn-dark.-rounded Dark
+                    button.btn-light.-rounded Light
+            br
+            br
+            .row
+                .col-12
+                    h3.h5 Hollow buttons
+                    a(href="#").btn-default.-hollow Default
+                    button.btn-primary.-hollow Primary
+                    button.btn-red.-hollow Red button
+                    button.btn-green.-hollow Green button
+                    button.btn-blue.-hollow Blue button
+                    button.btn-dark.-hollow Dark
+                    button.btn-light.-hollow Light
+            br
+            br
+            .row
+                .col-12
+                    h3.h5 Button sizes
+                .col-6.col-sm-12
+                    button.btn-green.-wide Wide
+                    br
+                    br
+                .col-6.col-sm-12
+                    button.btn-primary.-large Large
+                    button.btn-primary Medium
+                    button.btn-primary.-small Small
+
+        .container.m-gap
+            h2.h2.-underline Inputs
+            .row
+                .col-7.col-xs-12
+                    h3.h5 Input sizes
+                    input.input(type="email" placeholder="Large input").-large
+                    input.input(type="text" placeholder="Default input")
+                    input.input(type="password" placeholder="Small input").-small
+                .col-5.col-xs-12
+                    h3.h5 Input states
+                    input.input(type="text" placeholder="Active input")
+                    input.input(type="text" placeholder="Disabled input" disabled)
+                    br
+                    br
+            .row
+                .col-7.col-xs-12
+                    h3.h5 Input shapes
+                    input.input(type="text" placeholder="Square input").-square
+                    input.input(type="text" placeholder="Radius input").-radius
+                    input.input(type="text" placeholder="Rounded input").-rounded
+                .col-5.col-xs-12
+                    h3.h5 Input modes
+                    input.input(type="text" placeholder="Hollow input").-hollow
+                    input.input(type="text" placeholder="Pure input").-pure
+                    br
+                    br
+            .row
+                .col-12
+                    h3.h5 Full width input
+                    input.input(type="text" placeholder="Wide input").-Wide
+                    br
+                    br
+            .row
+                .col-12
+                    h3.h5 Textarea
+                .col-4.col-sm-12
+                    textarea.textarea(placeholder="Defaule textarea" rows="6")
+                .col-4.col-sm-12
+                    textarea.textarea(placeholder="Static textarea" rows="6").-static
+                .col-4.col-sm-12
+                    textarea.textarea(placeholder="Disabled textarea" rows="6" disabled)
+
+

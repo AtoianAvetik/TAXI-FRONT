@@ -1,0 +1,36 @@
+.promo{
+    text-align: center;
+    position: relative;
+    @include bg;
+
+    > *{
+        position: relative;
+        z-index: 1;
+    }
+
+    &.-light{
+        background-color: $light;
+        color: $dark;
+
+        &:before{
+            content: '';
+            @include overlay;
+            background: rgba($light, .4);
+        }
+    }
+
+    &.-dark{
+        background-color: $dark;
+        color: $light;
+
+        &:before{
+            content: '';
+            @include overlay;
+            background: rgba($dark, .4);
+        }
+    }
+
+    &_content{
+        margin: 20px 0;
+    }
+}

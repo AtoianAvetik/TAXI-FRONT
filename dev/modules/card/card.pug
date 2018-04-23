@@ -1,0 +1,7 @@
+mixin card(data)
+    .card(class='-' + data.type style=data.bg && "background-color:" + data.bg)
+        .card_image(style=data.image && "background-image: url(" + data.image + ")")
+        .card_title.h3= data.title
+        .card_content.text-content !{data.content}
+        a.card_btn.btn-primary(href="#" )= data.btn_text
+

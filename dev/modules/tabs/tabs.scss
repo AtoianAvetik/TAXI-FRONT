@@ -1,0 +1,33 @@
+.tabs{
+    padding-bottom: 15px;
+    border-bottom: 1px solid $gray-light;
+}
+
+.tab{
+    display: inline-block;
+    margin: 0 20px;
+
+    &.-active{
+        color: $primary-color;
+    }
+    
+    &_link:hover{
+        text-decoration: underline;
+    }
+
+    &:first-child{
+        margin-left: 0;
+    }
+}
+
+.tabs-content{
+    margin-top: 20px;
+}
+
+.tab-pane{
+    display: none;
+
+    &.-active{
+        display: block;
+    }
+}
