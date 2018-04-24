@@ -1,88 +1,10 @@
 html
     include ./templates/head
-    body
-        +top-banner-bar
-        .wrapper
-            +header
-            main.content
-                .container
-                    .row.m-gap
-                        .col-3.md-hide
-
-                        .col-9.col-md-12
-                            section.form-block
-                                .card
-                                    .card_header.-primary
-                                        .card_title Подача авто
-                                    .card_content.card_pd
-                                        .card_row
-                                            .form-group
-                                                .form-group_left
-                                                    label Место:
-                                                .form-group_right
-                                                    input(type="text" readonly="readonly" name="orderInfoFrom" class="input -wide" value="Аэропорт Симферополь")
-                                        .card_row
-                                            .row
-                                                .col-6.col-xs-12
-                                                    .form-group.form-group_small
-                                                        .form-group_left
-                                                            label Номер рейса:
-                                                        .form-group_right
-                                                            input(type="text" name="orderInfoNumber" class="input -wide" placeholder="######")
-                                                .col-6.col-xs-12
-                                                    .form-group.form-group_small
-                                                        .form-group_left.-s
-                                                            label Дата:
-                                                        .form-group_right
-                                                            input(type="text" name="orderInfoDate" class="input -wide" id="orderInfoDate" data-toggle="datepicker" placeholder="ГГГГ/ММ/ДД")
-                                                    .form-group.form-group_small
-                                                        .form-group_left.-s
-                                                            label Время:
-                                                        .form-group_right
-                                                            input(type="text" name="orderInfoTime" class="input -wide" id="orderInfoTime" data-toggle="wickedpicker")
-                            section.form-block
-                                .card
-                                    .card_header
-                                        .card_title Куда
-                                    .card_content.card_pd
-                                        .card_row
-                                            .form-group
-                                                .form-group_left
-                                                    label Город:
-                                                .form-group_right
-                                                    input(type="text" name="orderInfoTo"  class="input -wide -wide")
-                            section.form-block
-                                .card
-                                    .card_header
-                                        .card_title Оплата
-                                    .card_content.card_pd
-                                        .card_row
-                                            .form-group
-                                                .form-group_left.-l
-                                                    label Способ оплаты:
-                                                .form-group_right
-                                                    input(type="text" readonly="readonly" name="orderInfoPayType" class="input -wide" value="Наличные")
-                            section.form-block
-                                .card
-                                    .card_header
-                                        .card_title Подача авто
-                                    .card_content.card_pd
-                                        .card_row
-                                            .row
-                                                .col-6.col-xs-12
-                                                    .form-group.form-group_small
-                                                        .form-group_left
-                                                            label Ваше имя:
-                                                        .form-group_right
-                                                            input(type="text" name="orderInfoClientName" class="input -wide")
-                                                .col-6.col-xs-12
-                                                    .form-group.form-group_small
-                                                        .form-group_left
-                                                            label Телефон:
-                                                        .form-group_right
-                                                            input(type="text" name="orderInfoClientPhoneNumber" class="input -wide" placeholder="в формате: 7978 123 45 67")
-            +footer
+    body.-sitemap
+        div.sitemap
+                +sitemap
     include ./templates/scripts
+
 
 
 

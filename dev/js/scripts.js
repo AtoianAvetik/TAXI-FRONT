@@ -1,7 +1,7 @@
 module.exports = {
     libs: [
         "node_modules/jquery/dist/jquery.js",
-        "node_modules/swiper/dist/js/swiper.jquery.min.js",
+        "node_modules/swiper/dist/js/swiper.min.js",
         "node_modules/select2/dist/js/select2.min.js",
         "node_modules/highlightjs/highlight.pack.js",
         "node_modules/jquery-validation/dist/jquery.validate.js",
@@ -53,6 +53,7 @@ module.exports = {
 		"dev/modules/map/map.js",
 		"dev/modules/video-block/video-block.js",
 		"dev/modules/top-panel/top-panel.js",
-		"dev/modules/notification/notification.js"
+		"dev/modules/notification/notification.js",
+		"dev/modules/sitemap/sitemap.js"
     ]
 };

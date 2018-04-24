@@ -34,7 +34,8 @@ var path = {
     },
     dev: {
         html: 'dev/*.html',
-        pug: 'dev/*.pug',
+        pug: ['dev/*.pug', 'dev/pages/*.pug'],
+        pages: 'build/pages/*.pug',
         js: require('./dev/js/scripts.js'),
         style: 'dev/styles/*.scss',
         img: {
