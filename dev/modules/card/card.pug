@@ -1,7 +1,7 @@
 mixin card(data)
-    .card(class='-' + data.type style=data.bg && "background-color:" + data.bg)
-        .card_image(style=data.image && "background-image: url(" + data.image + ")")
-        .card_title.h3= data.title
+    .card(class='-' + data.type style=data.bg_color && "background-color:" + data.bg_color)
+        .card_image(style=data.bg_image && "background-image: url(" + data.bg_image + ")")
+            img(src=data.img alt="")
+        .card_title(class=data.heading_class ? data.heading_class : 'h3')= data.title
         .card_content.text-content !{data.content}
         a.card_btn.btn-primary(href="#" )= data.btn_text
-
