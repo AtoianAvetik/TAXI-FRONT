@@ -1,11 +1,11 @@
 @font-face {
 	font-family: 'iconFont';
-	src: url('iconFont.eot?1524312946');
-	src: url('iconFont.eot?1524312946#iefix') format('embedded-opentype'),
-		 url('iconFont.svg?1524312946#iconFont') format('svg'),
-		 url('iconFont.woff?1524312946') format('woff'),
-		 url('iconFont.woff?1524312946') format('woff2'),
-		 url('iconFont.ttf?1524312946') format('truetype');
+	src: url('iconFont.eot?1524590370');
+	src: url('iconFont.eot?1524590370#iefix') format('embedded-opentype'),
+		 url('iconFont.svg?1524590370#iconFont') format('svg'),
+		 url('iconFont.woff?1524590370') format('woff'),
+		 url('iconFont.woff?1524590370') format('woff2'),
+		 url('iconFont.ttf?1524590370') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -39,3 +39,5 @@
 /*----icon classes-----*/
 
 .icon-phone-call:before { content: "\E000"; }
+.icon-arrow-down:before { content: "\E001"; }
+.icon-email:before { content: "\E002"; }

@@ -1,11 +1,37 @@
+[type='text'],
+[type='password'],
+[type='date'],
+[type='datetime'],
+[type='datetime-local'],
+[type='month'],
+[type='week'],
+[type='email'],
+[type='number'],
+[type='search'],
+[type='tel'],
+[type='time'],
+[type='url'],
+[type='color'],
+textarea{
+    border: none;
+    border-radius: 0;
+    padding: 0.4em 0.5em;
+    font-size: $base-font-size;
+}
+
+input[readonly]{
+    cursor: not-allowed;
+}
+
 .form-block {
     margin-bottom: 20px;
 }
 
 .form-group {
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
     display: flex;
     align-items: center;
+    position: relative;
 
     &_left {
         flex: 0 0 125px;
@@ -54,8 +80,4 @@
             }
         }
     }
-}
-label {
-    display: inline-block;
-    margin: 0 1rem .5rem 0;
 }

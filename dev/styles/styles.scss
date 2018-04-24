@@ -13,7 +13,7 @@
  Base
 --------------------------------------*/
 @import "base/fonts";
-@import "../fonts/iconFont/iconFont.css"; // iconFont
+//@import "../fonts/iconFont/iconFont.css"; // iconFont
 @import "base/icons";
 @import "base/typography";
 @import "base/zindex";
@@ -29,8 +29,8 @@
  Elements
 --------------------------------------*/
 @import "elements/button";
-@import "elements/input";
 @import "elements/forms";
+@import "elements/form-control";
 @import "elements/utilities";
 
 /*--------------------------------------/
@@ -77,3 +77,4 @@
 @import "../modules/top-panel/top-panel";
 @import "../modules/notification/notification";
 @import "../modules/sitemap/sitemap";
+@import "../modules/feedback/feedback";

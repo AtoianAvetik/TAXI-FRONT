@@ -20,7 +20,7 @@ html
                                                 .form-group_left
                                                     label Место:
                                                 .form-group_right
-                                                    input(type="text" readonly="readonly" name="orderInfoFrom" class="input -wide" value="Аэропорт Симферополь")
+                                                    input(type="text" readonly="readonly" name="orderInfoFrom" class="form-control -wide" value="Аэропорт Симферополь")
                                         .card_row
                                             .row
                                                 .col-6.col-xs-12
@@ -28,18 +28,18 @@ html
                                                         .form-group_left
                                                             label Номер рейса:
                                                         .form-group_right
-                                                            input(type="text" name="orderInfoNumber" class="input -wide" placeholder="######")
+                                                            input(type="text" name="orderInfoNumber" class="form-control -wide" placeholder="######")
                                                 .col-6.col-xs-12
                                                     .form-group.form-group_small
                                                         .form-group_left.-s
                                                             label Дата:
                                                         .form-group_right
-                                                            input(type="text" name="orderInfoDate" class="input -wide" id="orderInfoDate" data-toggle="datepicker" placeholder="ГГГГ/ММ/ДД")
+                                                            input(type="text" name="orderInfoDate" class="form-control -wide" id="orderInfoDate" data-toggle="datepicker" placeholder="ГГГГ/ММ/ДД")
                                                     .form-group.form-group_small
                                                         .form-group_left.-s
                                                             label Время:
                                                         .form-group_right
-                                                            input(type="text" name="orderInfoTime" class="input -wide" id="orderInfoTime" data-toggle="wickedpicker")
+                                                            input(type="text" name="orderInfoTime" class="form-control -wide" id="orderInfoTime" data-toggle="wickedpicker")
                             section.form-block
                                 .card.-form
                                     .card_header
@@ -50,7 +50,7 @@ html
                                                 .form-group_left
                                                     label Город:
                                                 .form-group_right
-                                                    input(type="text" name="orderInfoTo"  class="input -wide -wide")
+                                                    input(type="text" name="orderInfoTo"  class="form-control -wide")
                             section.form-block
                                 .card.-form
                                     .card_header
@@ -61,7 +61,7 @@ html
                                                 .form-group_left.-l
                                                     label Способ оплаты:
                                                 .form-group_right
-                                                    input(type="text" readonly="readonly" name="orderInfoPayType" class="input -wide" value="Наличные")
+                                                    input(type="text" readonly="readonly" name="orderInfoPayType" class="form-control -wide" value="Наличные")
                             section.form-block
                                 .card.-form
                                     .card_header
@@ -74,14 +74,15 @@ html
                                                         .form-group_left
                                                             label Ваше имя:
                                                         .form-group_right
-                                                            input(type="text" name="orderInfoClientName" class="input -wide")
+                                                            input(type="text" name="orderInfoClientName" class="form-control -wide")
                                                 .col-6.col-xs-12
                                                     .form-group.form-group_small
                                                         .form-group_left
                                                             label Телефон:
                                                         .form-group_right
-                                                            input(type="text" name="orderInfoClientPhoneNumber" class="input -wide" placeholder="в формате: 7978 123 45 67")
+                                                            input(type="text" name="orderInfoClientPhoneNumber" class="form-control -wide" placeholder="в формате: 7978 123 45 67")
             +footer
+            +feedback
     include ./templates/scripts
 
 

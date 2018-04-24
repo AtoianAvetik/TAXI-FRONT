@@ -54,6 +54,7 @@ module.exports = {
 		"dev/modules/video-block/video-block.js",
 		"dev/modules/top-panel/top-panel.js",
 		"dev/modules/notification/notification.js",
-		"dev/modules/sitemap/sitemap.js"
+		"dev/modules/sitemap/sitemap.js",
+		"dev/modules/feedback/feedback.js"
     ]
 };
