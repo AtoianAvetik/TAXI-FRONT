@@ -1,6 +1,6 @@
 // Grid Variables
 //Flex variables for row
-$row_modifiers: row column start center end around between items-top items-middle items-bottom top middle bottom v-between zero-space clear;
+$row_modifiers: row column start center end around between items-top items-middle items-bottom top middle bottom v-between zero-space clear equal-height;
 
 @mixin _assert-ascending($map, $map-name) {
     $prev-key: null;

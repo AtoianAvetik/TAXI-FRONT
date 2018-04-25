@@ -31,6 +31,12 @@ body{
 .content{
     flex: 1 0 auto;
     background-color: $gray-light;
+
+    &-heading {
+        .heading {
+            margin-bottom: 0;
+        }
+    }
 }
 
 .container{
@@ -70,6 +76,14 @@ body{
         padding-top: $padding-gap - 30px;
         padding-bottom: $padding-gap - 30px;
     }
+
+    &.-zero-bottom {
+        padding-bottom: 0;
+    }
+
+    &.-zero-top {
+        padding-top: 0;
+    }
 }
 
 /*--------------------------------------/
@@ -93,5 +107,13 @@ body{
     @include media(sm){
         margin-top: $margin-gap - 30px;
         margin-bottom: $margin-gap - 30px;
+    }
+
+    &.-zero-bottom {
+        margin-bottom: 0;
+    }
+
+    &.-zero-top {
+        margin-top: 0;
     }
 }

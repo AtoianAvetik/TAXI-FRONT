@@ -129,6 +129,11 @@
 
       [class*='col'] { padding-left: 0; padding-right: 0; padding-bottom: 0; }
 
+      //set equal-height for cols content
+    } @else if $prop == 'equal-height' {
+
+      [class*='col'] { display: flex }
+
       //add clear property to flex block for clear display flex
     } @else if $prop == 'clear' { display: block !important;
 

@@ -52,10 +52,12 @@ p{
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6{
-    text-transform: uppercase;
     margin: 0 0 .5em 0;
-    font-weight: 600;
     @extend .heading;
+
+    &.-strong {
+        font-weight: 600;
+    }
 
     &.-underline{
         padding-bottom: .3em;
