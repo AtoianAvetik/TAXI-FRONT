@@ -1,10 +1,5 @@
 .header{
     display: block;
-
-    .bg-pattern:before {
-        top: 0;
-        background-color: $primary-color;
-    }
 }
 
 .navbar-wrap,
@@ -55,7 +50,6 @@
     }
 
     &-inner {
-        padding-top: 30px;
     }
 
     &_block{

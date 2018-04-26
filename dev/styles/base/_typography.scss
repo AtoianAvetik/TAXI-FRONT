@@ -70,18 +70,6 @@ p{
 }
 
 .h1{
-    font-size: em(50);
-
-    @include media(sm){
-        font-size: 40px;
-    }
-
-    @include media(xs){
-        font-size: 35px;
-    }
-}
-
-.h2{
     font-size: em(40);
 
     @include media(sm){
@@ -89,19 +77,31 @@ p{
     }
 
     @include media(xs){
-        font-size: 30px;
+        font-size: 32px;
+    }
+}
+
+.h2{
+    font-size: em(35);
+
+    @include media(sm){
+        font-size: 32px;
+    }
+
+    @include media(xs){
+        font-size: 28px;
     }
 }
 
 .h3{
-    font-size: em(32);
+    font-size: em(28);
 
     @include media(sm){
-        font-size: 28px;
+        font-size: 24px;
     }
 
     @include media(xs){
-        font-size: 24px;
+        font-size: 22px;
     }
 }
 

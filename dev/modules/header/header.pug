@@ -1,11 +1,11 @@
 mixin header()
     header.header(data-module="header")
         .navbar-wrap
-            .navbar.navbar_full-width.bg-pattern(data-js='navbar')
+            .navbar.navbar_full-width(data-js='navbar')
                 .container
                     .row.-around.no-gutters.navbar-inner
                         .navbar_block.navbar_panel
-                            +header-logo
+                            +logo({})
                             button.menu-btn.btn-pure
                                 +hamburger
                         .navbar_block.navbar_contact-box-wrap
@@ -50,7 +50,7 @@ mixin header()
                 .container
                     .row.-around.no-gutters.navbar-inner
                         .navbar_block.navbar_panel
-                            +header-logo
+                            +logo({})
                         .navbar_block.navbar_contact-box-wrap
                             .contact-box
                                 i.icon.icon-phone-call

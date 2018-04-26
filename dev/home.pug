@@ -1,86 +1,188 @@
 html
     include ./templates/head
     body
-        +top-banner-bar
         .wrapper
             +header
             main.content
-                .container
-                    .row.m-gap
-                        .col-3.md-hide
+                +slider([
+                    {
+                        module: 'hero',
+                        settings: {
+                            type: 'large',
+                            image: 'img/tmp/hero.jpg',
+                            content: '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi obcaecati reprehenderit vitae! Adipisci amet autem culpa, dolorem est, eum illo laudantium minima neque nisi, provident reiciendis repudiandae rerum ullam vitae?</p>',
+                            title: 'Hero slide 1',
+                            heading_class: 'h2',
+                            btn_text: 'Read more'
+                        }
+                    },
+                    {
+                        module: 'hero',
+                        settings: {
+                            type: 'large',
+                            image: 'img/tmp/hero-1.jpg',
+                            content: '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi obcaecati reprehenderit vitae! Adipisci amet autem culpa, dolorem est, eum illo laudantium minima neque nisi, provident reiciendis repudiandae rerum ullam vitae?</p>',
+                            title: 'Hero slide 2',
+                            heading_class: 'h2',
+                            btn_text: 'Read more'
+                        }
+                    },
+                    {
+                        module: 'hero',
+                        settings: {
+                            type: 'large',
+                            image: 'img/tmp/hero-2.jpg',
+                            content: '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi obcaecati reprehenderit vitae! Adipisci amet autem culpa, dolorem est, eum illo laudantium minima neque nisi, provident reiciendis repudiandae rerum ullam vitae?</p>',
+                            title: 'Hero slide 3',
+                            heading_class: 'h2',
+                            btn_text: 'Read more'
+                        }
+                    }
+                ])
+                section
+                    .container.-full.-bg-white.p-gap
+                        .container
+                            .row.-around.-equal-height.card-list
+                                .col-4.col-md-6.col-sm-12
+                                    +card({
+                                        type: 'advantage',
+                                        title: 'Ожидание',
+                                        title_colored: 'Бесплатно',
+                                        heading_class: 'h3',
+                                        icon: '',
+                                        content: 'Ожидание в аэропорту Симферополя <strong style="color: #246caa">БЕСПЛАТНО</strong>'
+                                    })
+                                .col-4.col-md-6.col-sm-12
+                                    +card({
+                                        type: 'advantage',
+                                        title: 'Провоз',
+                                        title_colored: 'Багажа',
+                                        heading_class: 'h3',
+                                        icon: 'icon-baggage',
+                                        content: 'Багаж <strong style="color: #246caa">БЕСПЛАТНО</strong>'
+                                    })
+                                .col-4.col-md-6.col-sm-12
+                                    +card({
+                                        type: 'advantage',
+                                        title: 'Бесплатный',
+                                        title_colored: 'WI-FI',
+                                        heading_class: 'h3',
+                                        icon: 'icon-wifi',
+                                        content: 'WI-FI в машине <strong style="color: #246caa">БЕСПЛАТНО</strong>'
+                                    })
+                                .col-4.col-md-6.col-sm-12
+                                    +card({
+                                        type: 'advantage',
+                                        title: 'Лучшие',
+                                        title_colored: 'Цены',
+                                        heading_class: 'h3',
+                                        icon: '',
+                                        content: 'Цены фиксированные и никаких дополнительных затрат'
+                                    })
+                                .col-4.col-md-6.col-sm-12
+                                    +card({
+                                        type: 'advantage',
+                                        title: '',
+                                        title_colored: '',
+                                        heading_class: 'h3',
+                                        icon: '',
+                                        content: 'В нашей фирме более 1000  машин'
+                                    })
+                                .col-4.col-md-6.col-sm-12
+                                    +card({
+                                        type: 'advantage',
+                                        title: 'Поездка с',
+                                        title_colored: 'Комфортом',
+                                        heading_class: 'h3',
+                                        icon: '',
+                                        content: 'Комфорт бизнесс кдасса с кондиционером'
+                                    })
+                                .col-4.col-md-6.col-sm-12
+                                    +card({
+                                        type: 'advantage',
+                                        title: 'Економте',
+                                        title_colored: 'Сразу',
+                                        heading_class: 'h3',
+                                        icon: '',
+                                        content: 'Забронируйте поездку в обе стороны и получите скидку от 100руб до 500руб!'
+                                    })
+                section
+                    .container
+                        .row.m-gap
+                            .col-3.md-hide
 
-                        .col-9.col-md-12
-                            section
-                                .card.-form
-                                    .card_header.-primary
-                                        .card_title Подача авто
-                                    .card_content.card_pd
-                                        .card_row
-                                            .form-group
-                                                .form-group_left
-                                                    label Место:
-                                                .form-group_right
-                                                    input(type="text" readonly="readonly" name="orderInfoFrom" class="form-control -wide" value="Аэропорт Симферополь")
-                                        .card_row
-                                            .row
-                                                .col-6.col-xs-12
-                                                    .form-group.form-group_small
-                                                        .form-group_left
-                                                            label Номер рейса:
-                                                        .form-group_right
-                                                            input(type="text" name="orderInfoNumber" class="form-control -wide" placeholder="######")
-                                                .col-6.col-xs-12
-                                                    .form-group.form-group_small
-                                                        .form-group_left.-s
-                                                            label Дата:
-                                                        .form-group_right
-                                                            input(type="text" name="orderInfoDate" class="form-control -wide" id="orderInfoDate" data-toggle="datepicker" placeholder="ГГГГ/ММ/ДД")
-                                                    .form-group.form-group_small
-                                                        .form-group_left.-s
-                                                            label Время:
-                                                        .form-group_right
-                                                            input(type="text" name="orderInfoTime" class="form-control -wide" id="orderInfoTime" data-toggle="wickedpicker")
-                            section
-                                .card.-form
-                                    .card_header
-                                        .card_title Куда
-                                    .card_content.card_pd
-                                        .card_row
-                                            .form-group
-                                                .form-group_left
-                                                    label Город:
-                                                .form-group_right
-                                                    input(type="text" name="orderInfoTo"  class="form-control -wide")
-                            section
-                                .card.-form
-                                    .card_header
-                                        .card_title Оплата
-                                    .card_content.card_pd
-                                        .card_row
-                                            .form-group
-                                                .form-group_left.-l
-                                                    label Способ оплаты:
-                                                .form-group_right
-                                                    input(type="text" readonly="readonly" name="orderInfoPayType" class="form-control -wide" value="Наличные")
-                            section
-                                .card.-form
-                                    .card_header
-                                        .card_title Подача авто
-                                    .card_content.card_pd
-                                        .card_row
-                                            .row
-                                                .col-6.col-xs-12
-                                                    .form-group.form-group_small
-                                                        .form-group_left
-                                                            label Ваше имя:
-                                                        .form-group_right
-                                                            input(type="text" name="orderInfoClientName" class="form-control -wide")
-                                                .col-6.col-xs-12
-                                                    .form-group.form-group_small
-                                                        .form-group_left
-                                                            label Телефон:
-                                                        .form-group_right
-                                                            input(type="text" name="orderInfoClientPhoneNumber" class="form-control -wide" placeholder="в формате: 7978 123 45 67")
+                            .col-9.col-md-12
+                                section
+                                    .card.-form
+                                        .card_header.-primary
+                                            .card_title Подача авто
+                                        .card_content.card_pd
+                                            .card_row
+                                                .form-group
+                                                    .form-group_left
+                                                        label Место:
+                                                    .form-group_right
+                                                        input(type="text" readonly="readonly" name="orderInfoFrom" class="form-control -wide" value="Аэропорт Симферополь")
+                                            .card_row
+                                                .row
+                                                    .col-6.col-xs-12
+                                                        .form-group.form-group_small
+                                                            .form-group_left
+                                                                label Номер рейса:
+                                                            .form-group_right
+                                                                input(type="text" name="orderInfoNumber" class="form-control -wide" placeholder="######")
+                                                    .col-6.col-xs-12
+                                                        .form-group.form-group_small
+                                                            .form-group_left.-s
+                                                                label Дата:
+                                                            .form-group_right
+                                                                input(type="text" name="orderInfoDate" class="form-control -wide" id="orderInfoDate" data-toggle="datepicker" placeholder="ГГГГ/ММ/ДД")
+                                                        .form-group.form-group_small
+                                                            .form-group_left.-s
+                                                                label Время:
+                                                            .form-group_right
+                                                                input(type="text" name="orderInfoTime" class="form-control -wide" id="orderInfoTime" data-toggle="wickedpicker")
+                                section
+                                    .card.-form
+                                        .card_header
+                                            .card_title Куда
+                                        .card_content.card_pd
+                                            .card_row
+                                                .form-group
+                                                    .form-group_left
+                                                        label Город:
+                                                    .form-group_right
+                                                        input(type="text" name="orderInfoTo"  class="form-control -wide")
+                                section
+                                    .card.-form
+                                        .card_header
+                                            .card_title Оплата
+                                        .card_content.card_pd
+                                            .card_row
+                                                .form-group
+                                                    .form-group_left.-l
+                                                        label Способ оплаты:
+                                                    .form-group_right
+                                                        input(type="text" readonly="readonly" name="orderInfoPayType" class="form-control -wide" value="Наличные")
+                                section
+                                    .card.-form
+                                        .card_header
+                                            .card_title Подача авто
+                                        .card_content.card_pd
+                                            .card_row
+                                                .row
+                                                    .col-6.col-xs-12
+                                                        .form-group.form-group_small
+                                                            .form-group_left
+                                                                label Ваше имя:
+                                                            .form-group_right
+                                                                input(type="text" name="orderInfoClientName" class="form-control -wide")
+                                                    .col-6.col-xs-12
+                                                        .form-group.form-group_small
+                                                            .form-group_left
+                                                                label Телефон:
+                                                            .form-group_right
+                                                                input(type="text" name="orderInfoClientPhoneNumber" class="form-control -wide" placeholder="в формате: 7978 123 45 67")
             +footer
             +feedback
     include ./templates/scripts

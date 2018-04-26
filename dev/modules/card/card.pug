@@ -1,7 +1,15 @@
 mixin card(data)
     .card(class='-' + data.type style=data.bg_color && "background-color:" + data.bg_color)
-        .card_image(style=data.bg_image && "background-image: url(" + data.bg_image + ")")
-            img(src=data.img alt="")
-        .card_title(class=data.heading_class ? data.heading_class : 'h3')= data.title
+        if ( data.type !== 'advantage' )
+            .card_image(style=data.bg_image && "background-image: url(" + data.bg_image + ")")
+                img(src=data.img alt="")
+        if ( data.icon )
+            i.card_icon(class=data.icon)
+        .card_title(class=data.heading_class ? data.heading_class : 'h3')
+            =data.title
+            | &nbsp;
+            if ( data.title_colored )
+                span.primary-text= data.title_colored
         .card_content.text-content !{data.content}
-        a.card_btn.btn-primary(href="#" )= data.btn_text
+        if ( data.btn_text )
+            a.card_btn.btn-primary(href="#" )= data.btn_text

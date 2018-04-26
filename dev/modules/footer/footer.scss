@@ -20,5 +20,19 @@
             margin: 0;
         }
     }
+
+    .contact-box {
+        i {
+            color: $light;
+        }
+    }
+
+    .logo-label {
+        color: $light;
+    }
+
+    .logo-sub-label {
+        opacity: 0.85;
+    }
 }
 
