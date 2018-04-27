@@ -20,15 +20,32 @@ $hero: (
     }
 
     &.-large{
-        min-height: map-get($hero, 'large');
+        .hero-container{
+            min-height: map-get($hero, 'large');
+        }
     }
 
     &.-medium{
-        min-height: map-get($hero, 'medium');
+        .hero-container{
+            min-height: map-get($hero, 'medium');
+        }
     }
 
     &.-small{
-        min-height: map-get($hero, 'small');
+        .hero-container{
+            min-height: map-get($hero, 'small');
+        }
+    }
+
+    .hero-container{
+        min-height: map-get($hero, 'medium');
+        z-index: 1;
+        position: relative;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .container{

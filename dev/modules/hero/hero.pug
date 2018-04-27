@@ -1,7 +1,7 @@
 mixin hero(data)
     section.hero(class=data.type && '-'+data.type style="background-image: url(" + data.image + ")" )
         if (data.type !== 'small')
-            .container.-narrow
+            .hero-container.container.-narrow
                 h1.hero_heading.h2= data.title
                 if (data.type === 'large')
                     .hero_content.text-content !{data.content}

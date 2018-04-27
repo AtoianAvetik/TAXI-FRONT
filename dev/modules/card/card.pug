@@ -6,10 +6,12 @@ mixin card(data)
         if ( data.icon )
             i.card_icon(class=data.icon)
         .card_title(class=data.heading_class ? data.heading_class : 'h3')
-            =data.title
+            = data.title
             | &nbsp;
             if ( data.title_colored )
+                br
                 span.primary-text= data.title_colored
-        .card_content.text-content !{data.content}
+        if ( data.content )
+            .card_content.text-content !{data.content}
         if ( data.btn_text )
             a.card_btn.btn-primary(href="#" )= data.btn_text

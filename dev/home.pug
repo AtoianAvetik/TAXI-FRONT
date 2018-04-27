@@ -49,7 +49,7 @@ html
                                         title: 'Ожидание',
                                         title_colored: 'Бесплатно',
                                         heading_class: 'h3',
-                                        icon: '',
+                                        icon: 'icon-waiting',
                                         content: 'Ожидание в аэропорту Симферополя <strong style="color: #246caa">БЕСПЛАТНО</strong>'
                                     })
                                 .col-4.col-md-6.col-sm-12
@@ -76,17 +76,8 @@ html
                                         title: 'Лучшие',
                                         title_colored: 'Цены',
                                         heading_class: 'h3',
-                                        icon: '',
+                                        icon: 'icon-price',
                                         content: 'Цены фиксированные и никаких дополнительных затрат'
-                                    })
-                                .col-4.col-md-6.col-sm-12
-                                    +card({
-                                        type: 'advantage',
-                                        title: '',
-                                        title_colored: '',
-                                        heading_class: 'h3',
-                                        icon: '',
-                                        content: 'В нашей фирме более 1000  машин'
                                     })
                                 .col-4.col-md-6.col-sm-12
                                     +card({
@@ -94,7 +85,7 @@ html
                                         title: 'Поездка с',
                                         title_colored: 'Комфортом',
                                         heading_class: 'h3',
-                                        icon: '',
+                                        icon: 'icon-conditioner',
                                         content: 'Комфорт бизнесс кдасса с кондиционером'
                                     })
                                 .col-4.col-md-6.col-sm-12
@@ -103,14 +94,19 @@ html
                                         title: 'Економте',
                                         title_colored: 'Сразу',
                                         heading_class: 'h3',
-                                        icon: '',
+                                        icon: 'icon-percentage',
                                         content: 'Забронируйте поездку в обе стороны и получите скидку от 100руб до 500руб!'
                                     })
                 section
+                    +promo({
+                        type: 'blue',
+                        title: 'ЗАКАЗАТЬ СЕЙЧАС!',
+                        heading_class: 'h2',
+                        content: '<p class="h2"><i class="icon-phone-call"></i> +7(978) xxx xx xx</p>'
+                    })
+                section
                     .container
-                        .row.m-gap
-                            .col-3.md-hide
-
+                        .row.-center.m-gap
                             .col-9.col-md-12
                                 section
                                     .card.-form
@@ -153,6 +149,32 @@ html
                                                         label Город:
                                                     .form-group_right
                                                         input(type="text" name="orderInfoTo"  class="form-control -wide")
+                                section.accordion(data-module="accordion")
+                                    .card.-form.accordion_item.-active(data-js="item")
+                                        .card_header.accordion_link(data-js="trigger")
+                                            .card_title Дополнительно
+                                        .card_content.card_pd(data-js="content" )
+                                            .card_row
+                                                .form-group
+                                                    .form-group_left.-l
+                                                        label Когда ехать:
+                                                    .form-group_right
+                                                        .form-radio
+                                                            input.form-radio-input(type="radio" id="timeNow" name="timeType" checked)
+                                                            label.form-radio-label(for="timeNow") Срочно
+                                                        .form-radio
+                                                            input.form-radio-input(type="radio" id="timeLater" name="timeType")
+                                                            label.form-radio-label(for="timeLater") Предварительный заказ
+                                            .card_row
+                                                .form-group
+                                                    .form-group_left.-l
+                                                        label Класс авто:
+                                                    .form-group_right
+                                            .card_row
+                                                .form-group
+                                                    .form-group_left.-l
+                                                        label Доп. услуги:
+                                                    .form-group_right
                                 section
                                     .card.-form
                                         .card_header
@@ -183,6 +205,8 @@ html
                                                                 label Телефон:
                                                             .form-group_right
                                                                 input(type="text" name="orderInfoClientPhoneNumber" class="form-control -wide" placeholder="в формате: 7978 123 45 67")
+                                .row.-center
+                                    button.btn-primary.-large ЗАКАЗАТЬ
             +footer
             +feedback
     include ./templates/scripts

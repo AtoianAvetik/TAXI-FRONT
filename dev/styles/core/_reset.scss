@@ -104,6 +104,12 @@ input, select, button, textarea, form{
 textarea{
     border: none;
     border-radius: 0;
+    padding: 0.4em 0.5em;
+    font-size: $base-font-size;
+}
+
+input[readonly]{
+    cursor: not-allowed;
 }
 
 input[type=button], input[type=submit], button{
@@ -134,4 +140,9 @@ input[type="search"]::-webkit-search-results-decoration{
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+}
+
+label {
+    display: inline-block;
+    margin: 0 1rem .5rem 0;
 }

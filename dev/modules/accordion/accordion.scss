@@ -19,9 +19,9 @@
         &:after, &:before{
             content: '';
             position: absolute;
-            height: 1px;
-            width: 8px;
-            background: $dark;
+            height: 2px;
+            width: 10px;
+            background: $primary-color;
             top: 50%;
             margin-top: -1px;
             transition: transform .3s linear;
@@ -29,7 +29,7 @@
 
         &:after{
             transform: rotate(45deg);
-            right: 25px;
+            right: 26px;
         }
 
         &:before{

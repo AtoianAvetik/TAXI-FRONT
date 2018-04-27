@@ -16,8 +16,26 @@
     flex-direction: column;
 
     &.-frame{
-        padding: 25px;
+        padding: 15px;
         background: $light;
+        box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
+
+        .card_image{
+            min-height: 220px;
+            margin: -15px -15px 15px;
+        }
+
+        .card_title{
+            margin-bottom: 0;
+            font-weight: 500;
+            flex: 1 1 auto;
+            display: flex;
+            align-items: center;
+        }
+
+        .card_content {
+            margin-bottom: 0;
+        }
     }
 
     &.-solid{
@@ -48,6 +66,7 @@
         margin-bottom: 20px;
 
         .card_title {
+            color: $primary-color;
             font-size: 18px;
             line-height: 45px;
             height: 45px;
@@ -83,16 +102,12 @@
         }
 
         .card_title {
-            color: $dark;
             font-weight: 600;
-            display: flex;
-            flex-flow: row wrap;
-            align-items: center;
-
-            .inner-wrap {
-                margin-left: 15px;
-            }
         }
+    }
+
+    &.accordion_item {
+        border: none;
     }
 
     &_header {
@@ -104,6 +119,11 @@
 
         &.-primary {
             border-left: 3px solid $primary-color;
+        }
+
+        &.accordion_link {
+            padding: 0 32px;
+            cursor: pointer;
         }
     }
 
@@ -122,7 +142,6 @@
     }
 
     .card_title {
-        color: $primary-color;
         position: relative;
     }
 

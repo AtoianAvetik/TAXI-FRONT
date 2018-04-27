@@ -30,6 +30,17 @@
         }
     }
 
+    &.-blue{
+        background-color: $primary-color;
+        color: $light;
+
+        &:before{
+            content: '';
+            @include overlay;
+            background: rgba($primary-color, .4);
+        }
+    }
+
     &_content{
         margin: 20px 0;
     }

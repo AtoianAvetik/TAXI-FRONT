@@ -1,3 +1,7 @@
+//---------------------------------------//
+//------------ FORM CONTROL -------------//
+//---------------------------------------//
+
 .form-control{
     border: 1px solid $gray;
     border-radius: 5px;
@@ -78,6 +82,8 @@
     }
 }
 
+//------- form control placeholder ------//
+
 .form-control-placeholder {
     position: absolute;
     top: 0;
@@ -94,9 +100,103 @@
     opacity: 1;
 }
 
-label {
-    display: inline-block;
-    margin: 0 1rem .5rem 0;
+
+//---------------------------------------//
+//------------- FORM CHECK --------------//
+//---------------------------------------//
+
+.form-check {
+    position: relative;
+    display: block;
+    margin-bottom: .5rem;
+
+    &-label {
+        position: relative;
+        padding: 0 0 0 30px;
+        cursor: pointer;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: -3px;
+            left: 0;
+            width: 18px;
+            height: 18px;
+            border: 2px solid $primary-color;
+            border-radius: 2px;
+            transition: .2s;
+        }
+
+        &:after {
+            @include icon;
+            position: absolute;
+            left: 3px;
+            font-size: 17px;
+            color: $primary-color;
+            top: -6px;
+        }
+    }
+
+    &-input {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+
+        &:checked + label:after {
+            content: $icon-check;
+        }
+    }
 }
 
+//---------------------------------------//
+//------------- FORM RADIO --------------//
+//---------------------------------------//
 
+.form-radio {
+    position: relative;
+    display: inline-block;
+    margin-top: .5rem;
+
+    &-label {
+        position: relative;
+        padding: 0 0 0 30px;
+        cursor: pointer;
+
+        &:before {
+            content: '';
+            position: absolute;
+            left: 0px;
+            width: 18px;
+            height: 18px;
+            border: 1px solid $gray-dark;
+            border-radius: 50%;
+            background: $light;
+            display: inline-block;
+            margin-top: -2px;
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            left: 3px;
+            width: 12px;
+            top: 0;
+            height: 12px;
+            border-radius: 50%;
+            opacity: 0;
+            transition: all .2s linear;
+            background: $primary-color;
+            margin-top: 1px;
+        }
+    }
+
+    &-input {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+
+        &:checked + label:after {
+            opacity: 1;
+        }
+    }
+}
