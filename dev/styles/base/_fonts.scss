@@ -6,8 +6,21 @@
     src: url($font-path + '/iconFont/iconFont.eot#iefix') format('embedded-opentype'),
     url($font-path + '/iconFont/iconFont.svg#iconFont') format('svg'),
     url($font-path + '/iconFont/iconFont.woff') format('woff'),
-    url($font-path + '/iconFont/iconFont.woff') format('woff2'),
+    url($font-path + '/iconFont/iconFont.woff2') format('woff2'),
     url($font-path + '/iconFont/iconFont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'thinIconFont';
+    src: url($font-path + '/thinIconFont/thinIconFont.eot');
+    src: url($font-path + '/thinIconFont/thinIconFont.eot#iefix') format('embedded-opentype'),
+    url($font-path + '/thinIconFont/thinIconFont.svg#iconFont') format('svg'),
+    url($font-path + '/thinIconFont/thinIconFont.woff') format('woff'),
+    url($font-path + '/thinIconFont/thinIconFont.woff2') format('woff2'),
+    url($font-path + '/thinIconFont/thinIconFont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
