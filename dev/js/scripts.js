@@ -9,7 +9,7 @@ module.exports = {
         "node_modules/@fengyuanchen/datepicker/dist/datepicker.min.js",
         "node_modules/tether/dist/js/tether.js",
         "node_modules/tether-drop/dist/js/drop.js",
-        "node_modules/tether-tooltip/dist/js/tooltip.js",
+        "node_modules/tipso/src/tipso.min.js",
         "dev/js/plugins/masking-input.js"
     ],
     main: [

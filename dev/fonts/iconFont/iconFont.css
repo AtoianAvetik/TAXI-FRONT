@@ -1,11 +1,11 @@
 @font-face {
 	font-family: 'iconFont';
-	src: url('iconFont.eot?1524843991');
-	src: url('iconFont.eot?1524843991#iefix') format('embedded-opentype'),
-		 url('iconFont.svg?1524843991#iconFont') format('svg'),
-		 url('iconFont.woff?1524843991') format('woff'),
-		 url('iconFont.woff?1524843991') format('woff2'),
-		 url('iconFont.ttf?1524843991') format('truetype');
+	src: url('iconFont.eot?1524920654');
+	src: url('iconFont.eot?1524920654#iefix') format('embedded-opentype'),
+		 url('iconFont.svg?1524920654#iconFont') format('svg'),
+		 url('iconFont.woff?1524920654') format('woff'),
+		 url('iconFont.woff?1524920654') format('woff2'),
+		 url('iconFont.ttf?1524920654') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -48,3 +48,13 @@
 .icon-price:before { content: "\E007"; }
 .icon-conditioner:before { content: "\E008"; }
 .icon-percentage:before { content: "\E009"; }
+.icon-sedan:before { content: "\E00A"; }
+.icon-universal:before { content: "\E00B"; }
+.icon-micro:before { content: "\E00C"; }
+.icon-star:before { content: "\E00D"; }
+.icon-crown:before { content: "\E00E"; }
+.icon-user-with-plate:before { content: "\E00F"; }
+.icon-paw:before { content: "\E010"; }
+.icon-snowflake:before { content: "\E011"; }
+.icon-no-smoking:before { content: "\E012"; }
+.icon-silence:before { content: "\E013"; }

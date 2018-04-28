@@ -85,7 +85,7 @@ html
                                         title: 'Поездка с',
                                         title_colored: 'Комфортом',
                                         heading_class: 'h3',
-                                        icon: 'icon-conditioner',
+                                        icon: 'icon-snowflake',
                                         content: 'Комфорт бизнесс кдасса с кондиционером'
                                     })
                                 .col-4.col-md-6.col-sm-12
@@ -168,13 +168,54 @@ html
                                             .card_row
                                                 .form-group
                                                     .form-group_left.-l
-                                                        label Класс авто:
+                                                        label Обратно:
                                                     .form-group_right
+                                                        .form-check
+                                                            input.form-check-input(type="checkbox" id="reverseTransfer" name="reverseTransfer")
+                                                            label.form-check-label(for="reverseTransfer") Обратный трансфер
+                                            .card_row
+                                                .form-group
+                                                    .form-group_left.-l
+                                                        label Класс авто:
+                                                    .form-group_right.form-icon-list
+                                                        .form-icon
+                                                            input.form-icon-input(type="radio" id="sedan" name="autoClass" checked)
+                                                            label.form-icon-label.icon-sedan(for="sedan")
+                                                        .form-icon
+                                                            input.form-icon-input(type="radio" id="universal" name="autoClass")
+                                                            label.form-icon-label.icon-universal.tipso(for="universal" data-tipso-title="Универсал" data-tipso="Требуется автомобиль с кузовом.")
+                                                        .form-icon
+                                                            input.form-icon-input(type="radio" id="micro" name="autoClass")
+                                                            label.form-icon-label.icon-micro.tipso(for="micro" data-tipso-title="Микроавтобус" data-tipso="Требуется автомобиль типа микроавтобус. Рекомендуем использовать эту опцию в случае, если количество пассажиров превышает 4 человека.")
+                                                        .form-icon
+                                                            input.form-icon-input(type="radio" id="comfort" name="autoClass")
+                                                            label.form-icon-label.icon-star.tipso(for="comfort" data-tipso-title="Комфорт" data-tipso="Требуется автомобиль комфорт-класса.")
+                                                        .form-icon
+                                                            input.form-icon-input(type="radio" id="business" name="autoClass")
+                                                            label.form-icon-label.icon-crown.tipso(for="business" data-tipso-title="Бизнес" data-tipso="Требуется автомобиль бизнес-класса.")
                                             .card_row
                                                 .form-group
                                                     .form-group_left.-l
                                                         label Доп. услуги:
-                                                    .form-group_right
+                                                    .form-group_right.form-icon-list
+                                                        .form-icon
+                                                            input.form-icon-input(type="checkbox" id="userWithPlate" name="userWithPlate")
+                                                            label.form-icon-label.icon-user-with-plate.tipso(for="userWithPlate" data-tipso-title="С табличкой" data-tipso="Встретить с табличкой.")
+                                                        .form-icon
+                                                            input.form-icon-input(type="checkbox" id="withAnimal" name="withAnimal")
+                                                            label.form-icon-label.icon-paw.tipso(for="withAnimal" data-tipso-title="Перевозка животного" data-tipso="Укажите пожалуста в комментариях какое животное Вы собираетесь перевозить.")
+                                                        .form-icon
+                                                            input.form-icon-input(type="checkbox" id="salonLoading" name="salonLoading")
+                                                            label.form-icon-label.icon-baggage.tipso(for="salonLoading" data-tipso-title="Загрузка салона" data-tipso="Если необходимо загрузить салон вещами.")
+                                                        .form-icon
+                                                            input.form-icon-input(type="checkbox" id="withConditioner" name="withConditioner")
+                                                            label.form-icon-label.icon-snowflake.tipso(for="withConditioner" data-tipso-title="Кондиционер" data-tipso="Требуется кондиционер.")
+                                                        .form-icon
+                                                            input.form-icon-input(type="checkbox" id="noSmoking" name="noSmoking")
+                                                            label.form-icon-label.icon-no-smoking.tipso(for="noSmoking" data-tipso-title="Некурящий" data-tipso="Некурящий водитель")
+                                                        .form-icon
+                                                            input.form-icon-input(type="checkbox" id="silence" name="silence")
+                                                            label.form-icon-label.icon-silence.tipso(for="silence" data-tipso-title="Тишина" data-tipso="Тишина в салоне.")
                                 section
                                     .card.-form
                                         .card_header
