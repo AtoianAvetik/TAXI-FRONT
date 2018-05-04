@@ -1,8 +1,8 @@
 mixin footer()
     footer.footer
         .container.footer_main
-            .row.-middle
-                .footer_block.col-6.col-md-6.col-xs-12
+            .row.-middle.-center
+                .footer_block.col.col-md-6.col-xs-12
                     +logo({footer: true})
                 .footer_block.col-3.col-md-6.col-xs-12
                     .contact-box
@@ -11,7 +11,7 @@ mixin footer()
                             dt Позвоните Нам:
                             dd
                             a(href="callto:#") +7(978) xxx xx xx
-                .footer_block.col-3.col-md-6.col-xs-12
+                .footer_block.col-4.col-md-6.col-xs-12
                     +social-block
         .footer_bottom
             p @2018

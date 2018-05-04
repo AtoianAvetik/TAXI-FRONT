@@ -19,6 +19,10 @@
         transition: all .6s ease-in-out;
         background: $light;
         width: 350px;
+
+        @include media(xs) {
+            width: 280px;
+        }
     }
 
     &-launch-button {
@@ -35,7 +39,15 @@
 
         i {
             font-size: 35px;
-            margin-right: 15px;
+        }
+
+        span {
+            display: inline-block;
+            margin-left: 15px;
+
+            @include media(sm) {
+                display: none;
+            }
         }
     }
 

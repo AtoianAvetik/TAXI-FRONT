@@ -9,8 +9,6 @@ body{
     font-size: $base-font-size;
     color: $base-color;
     min-width: 320px;
-    display: flex;
-    flex-direction: column;
 
     &.-backdrop{
         overflow: hidden;
@@ -23,13 +21,15 @@ body{
 
 .wrapper {
     position: relative;
-    flex: 1 0 auto;
     flex-direction: column;
     display: flex;
+    min-height: 100vh;
+    height: 1px;
 }
 
 .content{
     flex: 1 0 auto;
+    overflow: hidden;
     background-color: $gray-light;
 
     &-heading {

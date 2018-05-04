@@ -75,6 +75,10 @@ table{
     border-spacing: 0;
 }
 
+th {
+    text-align: left;
+}
+
 input:focus, select:focus, button:focus, textarea:focus{
     outline: none;
 }

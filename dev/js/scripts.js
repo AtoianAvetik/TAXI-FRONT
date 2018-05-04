@@ -55,6 +55,7 @@ module.exports = {
 		"dev/modules/top-panel/top-panel.js",
 		"dev/modules/notification/notification.js",
 		"dev/modules/sitemap/sitemap.js",
-		"dev/modules/feedback/feedback.js"
+		"dev/modules/feedback/feedback.js",
+		"dev/modules/table/table.js"
     ]
 };
