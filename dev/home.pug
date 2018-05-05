@@ -2,7 +2,7 @@ html
     include ./templates/head
     body
         .wrapper
-            +header
+            +header({active: 'home'})
             main.content
                 +slider([
                     {

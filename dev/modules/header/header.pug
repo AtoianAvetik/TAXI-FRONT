@@ -1,4 +1,5 @@
-mixin header()
+mixin header(data)
+    - var active = (data && data.active) || '';
     header.header(data-module="header")
         .navbar-wrap
             .navbar.navbar_full-width(data-js='navbar')
@@ -22,27 +23,32 @@ mixin header()
                                     {
                                         title: 'Заказ такси',
                                         link: 'home.html',
-                                        active: true
+                                        active: active === 'home'
                                     },
                                     {
                                         title: 'Тарифы',
-                                        link: 'rates.html'
+                                        link: 'rates.html',
+                                        active: active === 'rates'
                                     },
                                     {
                                         title: 'Автопарк',
-                                        link: 'autopark.html'
+                                        link: 'autopark.html',
+                                        active: active === 'autopark'
                                     },
                                     {
                                         title: 'Наши услуги',
-                                        link: 'services.html'
+                                        link: 'services.html',
+                                        active: active === 'services'
                                     },
                                     {
                                         title: 'О нас',
-                                        link: 'about.html'
+                                        link: 'about.html',
+                                        active: active === 'about'
                                     },
                                     {
                                         title: 'Контакты',
-                                        link: 'contacts.html'
+                                        link: 'contacts.html',
+                                        active: active === 'contacts'
                                     }
                                 ]
                             })
