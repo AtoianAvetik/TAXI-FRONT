@@ -13,7 +13,9 @@ html
                             content: '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi obcaecati reprehenderit vitae! Adipisci amet autem culpa, dolorem est, eum illo laudantium minima neque nisi, provident reiciendis repudiandae rerum ullam vitae?</p>',
                             title: 'Hero slide 1',
                             heading_class: 'h2',
-                            btn_text: 'Read more'
+                            btn_text: 'ЗАКАЗАТЬ ОНЛАЙН',
+                            btn_modifier: 'btn-primary -large',
+                            btn_anchor: '#onlineOrder'
                         }
                     },
                     {
@@ -24,7 +26,9 @@ html
                             content: '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi obcaecati reprehenderit vitae! Adipisci amet autem culpa, dolorem est, eum illo laudantium minima neque nisi, provident reiciendis repudiandae rerum ullam vitae?</p>',
                             title: 'Hero slide 2',
                             heading_class: 'h2',
-                            btn_text: 'Read more'
+                            btn_text: 'ЗАКАЗАТЬ ОНЛАЙН',
+                            btn_modifier: 'btn-primary -large',
+                            btn_anchor: '#onlineOrder'
                         }
                     },
                     {
@@ -35,7 +39,9 @@ html
                             content: '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi obcaecati reprehenderit vitae! Adipisci amet autem culpa, dolorem est, eum illo laudantium minima neque nisi, provident reiciendis repudiandae rerum ullam vitae?</p>',
                             title: 'Hero slide 3',
                             heading_class: 'h2',
-                            btn_text: 'Read more'
+                            btn_text: 'ЗАКАЗАТЬ ОНЛАЙН',
+                            btn_modifier: 'btn-primary -large',
+                            btn_anchor: '#onlineOrder'
                         }
                     }
                 ])
@@ -104,8 +110,10 @@ html
                         heading_class: 'h2',
                         content: '<p class="h2"><i class="thin-icon-phone-call"></i> +7(978) xxx xx xx</p>'
                     })
-                section
-                    .container
+                section(id="onlineOrder")
+                    .container.p-gap
+                        .content-heading.row.-center.no-gutters
+                            .heading.h3.primary-text ЗАКАЗАТЬ ТАКСИ ОНЛАЙН
                         .row.-center.m-gap
                             .col-9.col-md-12
                                 section
@@ -118,7 +126,129 @@ html
                                                     .form-group_left
                                                         label Место:
                                                     .form-group_right
-                                                        input(type="text" readonly="readonly" name="orderInfoFrom" class="form-control -wide" value="Аэропорт Симферополь")
+                                                        select(name="orderInfoFrom" data-select="orderInfoFrom")
+                                                            option(value="Аэропорт Симферополя") Аэропорт  Симферополя
+                                                            option(value="Ж/д вокзал Симферополя") Ж/д вокзал Симферополя
+                                                            option(value="Ай-даниль") Ай-даниль
+                                                            option(value="Алупка") Алупка
+                                                            option(value="Алушта") Алушта
+                                                            option(value="Андреевка") Андреевка
+                                                            option(value="Армянск") Армянск
+                                                            option(value="Балаклава") Балаклава
+                                                            option(value="Бахчисарай") Бахчисарай
+                                                            option(value="Белогорск") Белогорск
+                                                            option(value="Береговое (ЮБК)") Береговое (ЮБК)
+                                                            option(value="Береговое (бахчисарай)") Береговое (бахчисарай)
+                                                            option(value="Ботанический сад") Ботанический сад
+                                                            option(value="Вилино") Вилино
+                                                            option(value="Витино") Витино
+                                                            option(value="Гаспра") Гаспра
+                                                            option(value="Геническ") Геническ
+                                                            option(value="Голубой Залив") Голубой Залив
+                                                            option(value="Гурзуф") Гурзуф
+                                                            option(value="Гурзуф (Артек)") Гурзуф (Артек)
+                                                            option(value="Даниловка") Даниловка
+                                                            option(value="Джанкой") Джанкой
+                                                            option(value="Евпатория") Евпатория
+                                                            option(value="Заозерное") Заозерное
+                                                            option(value="Зеленогорье") Зеленогорье
+                                                            option(value="Золотое (Керчь)") Золотое (Керчь)
+                                                            option(value="Казантип (Поповка)") Казантип (Поповка)
+                                                            option(value="Канака") Канака
+                                                            option(value="Кастрополь") Кастрополь
+                                                            option(value="Кацивели") Кацивели
+                                                            option(value="Кача") Кача
+                                                            option(value="Керчь") Керчь
+                                                            option(value="Керчь (героевка)") Керчь (героевка)
+                                                            option(value="Керчь(порт крым)") Керчь(порт крым)
+                                                            option(value="Кикенеиз") Кикенеиз
+                                                            option(value="Коктебель") Коктебель
+                                                            option(value="Кореиз") Кореиз
+                                                            option(value="Красные пещеры") Красные пещеры
+                                                            option(value="Курортное (Белог. р-н)") Курортное (Белог. р-н)
+                                                            option(value="Курортное (Керчь)") Курортное (Керчь)
+                                                            option(value="Курортное (Ленин. р-н)") Курортное (Ленин. р-н)
+                                                            option(value="Курортное (Феодос. р-н)") Курортное (Феодос. р-н)
+                                                            option(value="Курортное (Щебетовка)") Курортное (Щебетовка)
+                                                            option(value="Курпаты") Курпаты
+                                                            option(value="Лавровое") Лавровое
+                                                            option(value="Лазурное") Лазурное
+                                                            option(value="Ласпи") Ласпи
+                                                            option(value="Ленино") Ленино
+                                                            option(value="Ливадия") Ливадия
+                                                            option(value="Малореченское") Малореченское
+                                                            option(value="Массандра") Массандра
+                                                            option(value="Межводное") Межводное
+                                                            option(value="Меллас") Меллас
+                                                            option(value="Мирный(казантип)") Мирный(казантип)
+                                                            option(value="Мисхор") Мисхор
+                                                            option(value="Морское") Морское
+                                                            option(value="Мраморные пещеры") Мраморные пещеры
+                                                            option(value="Мрия резорт СКК") Мрия резорт СКК
+                                                            option(value="Мысовое(щелкино)") Мысовое(щелкино)
+                                                            option(value="Научный") Научный
+                                                            option(value="Нижнегорское") Нижнегорское
+                                                            option(value="Нижняя Ореанда") Нижняя Ореанда
+                                                            option(value="Никита") Никита
+                                                            option(value="Николаевка") Николаевка
+                                                            option(value="Николаевка(Украина)") Николаевка(Украина)
+                                                            option(value="Новоозерное") Новоозерное
+                                                            option(value="Новоотрадное") Новоотрадное
+                                                            option(value="Новофедоровка") Новофедоровка
+                                                            option(value="Новый свет") Новый свет
+                                                            option(value="Окуневка") Окуневка
+                                                            option(value="Оленевка") Оленевка
+                                                            option(value="Олива") Олива
+                                                            option(value="Оползневое (Мрия Резорт))") Оползневое (Мрия Резорт))
+                                                            option(value="Орджоникидзе") Орджоникидзе
+                                                            option(value="Орлиное") Орлиное
+                                                            option(value="Орловка") Орловка
+                                                            option(value="Отрадное") Отрадное
+                                                            option(value="Парковое") Парковое
+                                                            option(value="Партенит") Партенит
+                                                            option(value="Песочное (Щелкино)") Песочное (Щелкино)
+                                                            option(value="Песчаное") Песчаное
+                                                            option(value="Понизовка (СКК Мрия)") Понизовка (СКК Мрия)
+                                                            option(value="Поповка") Поповка
+                                                            option(value="Прибрежное (Саки)") Прибрежное (Саки)
+                                                            option(value="Приветное") Приветное
+                                                            option(value="Раздольное") Раздольное
+                                                            option(value="Рыбачье") Рыбачье
+                                                            option(value="Саки") Саки
+                                                            option(value="Саки (полтава)") Саки (полтава)
+                                                            option(value="Санаторное") Санаторное
+                                                            option(value="Сатера") Сатера
+                                                            option(value="Севастополь (Гагар. р-н)") Севастополь (Гагар. р-н)
+                                                            option(value="Севастополь (Голландия)") Севастополь (Голландия)
+                                                            option(value="Севастополь (Ленин. р-н)") Севастополь (Ленин. р-н)
+                                                            option(value="Севастополь (Любимовка)") Севастополь (Любимовка)
+                                                            option(value="Севастополь (Радиогорка)") Севастополь (Радиогорка)
+                                                            option(value="Севастополь (Учкуевка )") Севастополь (Учкуевка )
+                                                            option(value="Севастополь (Фиолент)") Севастополь (Фиолент)
+                                                            option(value="Семидворье") Семидворье
+                                                            option(value="Симеиз") Симеиз
+                                                            option(value="Симферополь") Симферополь
+                                                            option(value="Соколиное") Соколиное
+                                                            option(value="Солнечная Долина") Солнечная Долина
+                                                            option(value="Солнечногорское") Солнечногорское
+                                                            option(value="Сотера") Сотера
+                                                            option(value="Старый Крым") Старый Крым
+                                                            option(value="Судак") Судак
+                                                            option(value="Угловое") Угловое
+                                                            option(value="Утёс") Утёс
+                                                            option(value="Феодосия") Феодосия
+                                                            option(value="Феодосия (Приморский)") Феодосия (Приморский)
+                                                            option(value="Феодосия(Береговое)") Феодосия(Береговое)
+                                                            option(value="Форос") Форос
+                                                            option(value="Фрунзе") Фрунзе
+                                                            option(value="Херсон (Украина)") Херсон (Украина)
+                                                            option(value="Черноморское") Черноморское
+                                                            option(value="Чонгар") Чонгар
+                                                            option(value="Штормовое") Штормовое
+                                                            option(value="Щебетовка") Щебетовка
+                                                            option(value="Щелкино") Щелкино
+                                                            option(value="Щелкино (Азовский)") Щелкино (Азовский)
+                                                            option(value="Ялта") Ялта
                                             .card_row
                                                 .row
                                                     .col-6.col-xs-12
@@ -148,7 +278,130 @@ html
                                                     .form-group_left
                                                         label Город:
                                                     .form-group_right
-                                                        input(type="text" name="orderInfoTo"  class="form-control -wide")
+                                                        select(name="orderInfoTo" data-select="orderInfoTo")
+                                                            option(value="Куда...") Куда...
+                                                            option(value="Аэропорт Симферополя") Аэропорт  Симферополя
+                                                            option(value="Ж/д вокзал Симферополя") Ж/д вокзал Симферополя
+                                                            option(value="Ай-даниль") Ай-даниль
+                                                            option(value="Алупка") Алупка
+                                                            option(value="Алушта") Алушта
+                                                            option(value="Андреевка") Андреевка
+                                                            option(value="Армянск") Армянск
+                                                            option(value="Балаклава") Балаклава
+                                                            option(value="Бахчисарай") Бахчисарай
+                                                            option(value="Белогорск") Белогорск
+                                                            option(value="Береговое (ЮБК)") Береговое (ЮБК)
+                                                            option(value="Береговое (бахчисарай)") Береговое (бахчисарай)
+                                                            option(value="Ботанический сад") Ботанический сад
+                                                            option(value="Вилино") Вилино
+                                                            option(value="Витино") Витино
+                                                            option(value="Гаспра") Гаспра
+                                                            option(value="Геническ") Геническ
+                                                            option(value="Голубой Залив") Голубой Залив
+                                                            option(value="Гурзуф") Гурзуф
+                                                            option(value="Гурзуф (Артек)") Гурзуф (Артек)
+                                                            option(value="Даниловка") Даниловка
+                                                            option(value="Джанкой") Джанкой
+                                                            option(value="Евпатория") Евпатория
+                                                            option(value="Заозерное") Заозерное
+                                                            option(value="Зеленогорье") Зеленогорье
+                                                            option(value="Золотое (Керчь)") Золотое (Керчь)
+                                                            option(value="Казантип (Поповка)") Казантип (Поповка)
+                                                            option(value="Канака") Канака
+                                                            option(value="Кастрополь") Кастрополь
+                                                            option(value="Кацивели") Кацивели
+                                                            option(value="Кача") Кача
+                                                            option(value="Керчь") Керчь
+                                                            option(value="Керчь (героевка)") Керчь (героевка)
+                                                            option(value="Керчь(порт крым)") Керчь(порт крым)
+                                                            option(value="Кикенеиз") Кикенеиз
+                                                            option(value="Коктебель") Коктебель
+                                                            option(value="Кореиз") Кореиз
+                                                            option(value="Красные пещеры") Красные пещеры
+                                                            option(value="Курортное (Белог. р-н)") Курортное (Белог. р-н)
+                                                            option(value="Курортное (Керчь)") Курортное (Керчь)
+                                                            option(value="Курортное (Ленин. р-н)") Курортное (Ленин. р-н)
+                                                            option(value="Курортное (Феодос. р-н)") Курортное (Феодос. р-н)
+                                                            option(value="Курортное (Щебетовка)") Курортное (Щебетовка)
+                                                            option(value="Курпаты") Курпаты
+                                                            option(value="Лавровое") Лавровое
+                                                            option(value="Лазурное") Лазурное
+                                                            option(value="Ласпи") Ласпи
+                                                            option(value="Ленино") Ленино
+                                                            option(value="Ливадия") Ливадия
+                                                            option(value="Малореченское") Малореченское
+                                                            option(value="Массандра") Массандра
+                                                            option(value="Межводное") Межводное
+                                                            option(value="Меллас") Меллас
+                                                            option(value="Мирный(казантип)") Мирный(казантип)
+                                                            option(value="Мисхор") Мисхор
+                                                            option(value="Морское") Морское
+                                                            option(value="Мраморные пещеры") Мраморные пещеры
+                                                            option(value="Мрия резорт СКК") Мрия резорт СКК
+                                                            option(value="Мысовое(щелкино)") Мысовое(щелкино)
+                                                            option(value="Научный") Научный
+                                                            option(value="Нижнегорское") Нижнегорское
+                                                            option(value="Нижняя Ореанда") Нижняя Ореанда
+                                                            option(value="Никита") Никита
+                                                            option(value="Николаевка") Николаевка
+                                                            option(value="Николаевка(Украина)") Николаевка(Украина)
+                                                            option(value="Новоозерное") Новоозерное
+                                                            option(value="Новоотрадное") Новоотрадное
+                                                            option(value="Новофедоровка") Новофедоровка
+                                                            option(value="Новый свет") Новый свет
+                                                            option(value="Окуневка") Окуневка
+                                                            option(value="Оленевка") Оленевка
+                                                            option(value="Олива") Олива
+                                                            option(value="Оползневое (Мрия Резорт))") Оползневое (Мрия Резорт))
+                                                            option(value="Орджоникидзе") Орджоникидзе
+                                                            option(value="Орлиное") Орлиное
+                                                            option(value="Орловка") Орловка
+                                                            option(value="Отрадное") Отрадное
+                                                            option(value="Парковое") Парковое
+                                                            option(value="Партенит") Партенит
+                                                            option(value="Песочное (Щелкино)") Песочное (Щелкино)
+                                                            option(value="Песчаное") Песчаное
+                                                            option(value="Понизовка (СКК Мрия)") Понизовка (СКК Мрия)
+                                                            option(value="Поповка") Поповка
+                                                            option(value="Прибрежное (Саки)") Прибрежное (Саки)
+                                                            option(value="Приветное") Приветное
+                                                            option(value="Раздольное") Раздольное
+                                                            option(value="Рыбачье") Рыбачье
+                                                            option(value="Саки") Саки
+                                                            option(value="Саки (полтава)") Саки (полтава)
+                                                            option(value="Санаторное") Санаторное
+                                                            option(value="Сатера") Сатера
+                                                            option(value="Севастополь (Гагар. р-н)") Севастополь (Гагар. р-н)
+                                                            option(value="Севастополь (Голландия)") Севастополь (Голландия)
+                                                            option(value="Севастополь (Ленин. р-н)") Севастополь (Ленин. р-н)
+                                                            option(value="Севастополь (Любимовка)") Севастополь (Любимовка)
+                                                            option(value="Севастополь (Радиогорка)") Севастополь (Радиогорка)
+                                                            option(value="Севастополь (Учкуевка )") Севастополь (Учкуевка )
+                                                            option(value="Севастополь (Фиолент)") Севастополь (Фиолент)
+                                                            option(value="Семидворье") Семидворье
+                                                            option(value="Симеиз") Симеиз
+                                                            option(value="Симферополь") Симферополь
+                                                            option(value="Соколиное") Соколиное
+                                                            option(value="Солнечная Долина") Солнечная Долина
+                                                            option(value="Солнечногорское") Солнечногорское
+                                                            option(value="Сотера") Сотера
+                                                            option(value="Старый Крым") Старый Крым
+                                                            option(value="Судак") Судак
+                                                            option(value="Угловое") Угловое
+                                                            option(value="Утёс") Утёс
+                                                            option(value="Феодосия") Феодосия
+                                                            option(value="Феодосия (Приморский)") Феодосия (Приморский)
+                                                            option(value="Феодосия(Береговое)") Феодосия(Береговое)
+                                                            option(value="Форос") Форос
+                                                            option(value="Фрунзе") Фрунзе
+                                                            option(value="Херсон (Украина)") Херсон (Украина)
+                                                            option(value="Черноморское") Черноморское
+                                                            option(value="Чонгар") Чонгар
+                                                            option(value="Штормовое") Штормовое
+                                                            option(value="Щебетовка") Щебетовка
+                                                            option(value="Щелкино") Щелкино
+                                                            option(value="Щелкино (Азовский)") Щелкино (Азовский)
+                                                            option(value="Ялта") Ялта
                                 section.accordion(data-module="accordion")
                                     .card.-form.accordion_item.-active(data-js="item")
                                         .card_header.accordion_link(data-js="trigger")
@@ -165,14 +418,6 @@ html
                                                         .form-radio
                                                             input.form-radio-input(type="radio" id="timeLater" name="timeType")
                                                             label.form-radio-label(for="timeLater") Предварительный заказ
-                                            .card_row
-                                                .form-group
-                                                    .form-group_left.-l
-                                                        label Обратно:
-                                                    .form-group_right
-                                                        .form-check
-                                                            input.form-check-input(type="checkbox" id="reverseTransfer" name="reverseTransfer")
-                                                            label.form-check-label(for="reverseTransfer") Обратный трансфер
                                             .card_row
                                                 .form-group
                                                     .form-group_left.-l
@@ -216,6 +461,29 @@ html
                                                         .form-icon
                                                             input.form-icon-input(type="checkbox" id="silence" name="silence")
                                                             label.form-icon-label.icon-silence.tipso(for="silence" data-tipso-title="Тишина" data-tipso="Тишина в салоне.")
+                                            .card_row
+                                                .form-group
+                                                    .form-group_left.-l
+                                                        label Обратно:
+                                                    .form-group_right
+                                                        .form-check
+                                                            input.form-check-input(type="checkbox" id="reverseTransfer" name="reverseTransfer")
+                                                            label.form-check-label(for="reverseTransfer") Обратный трансфер
+                                            .card_row.-hidden(data-show-checkbox="reverseTransfer")
+                                                .row
+                                                    .col-6.col-xs-12
+                                                        .form-group.form-group_small
+                                                            .form-group_left.-s
+                                                                label Дата:
+                                                            .form-group_right
+                                                                input(type="text" name="reverseTransferInfoDate" class="form-control -wide" id="reverseTransferInfoDate" data-toggle="datepicker" placeholder="ГГГГ/ММ/ДД")
+                                                    .col-6.col-xs-12
+                                                        .form-group.form-group_small
+                                                            .form-group_left.-s
+                                                                label Время:
+                                                            .form-group_right
+                                                                input(type="text" name="reverseTransferInfoTime" class="form-control -wide" id="reverseTransferInfoTime" data-toggle="wickedpicker")
+
                                 section
                                     .card.-form
                                         .card_header
@@ -230,7 +498,7 @@ html
                                 section
                                     .card.-form
                                         .card_header
-                                            .card_title Подача авто
+                                            .card_title Контактная информация
                                         .card_content.card_pd
                                             .card_row
                                                 .row
@@ -246,6 +514,14 @@ html
                                                                 label Телефон:
                                                             .form-group_right
                                                                 input(type="text" name="orderInfoClientPhoneNumber" class="form-control -wide" placeholder="в формате: 7978 123 45 67")
+                                section
+                                    .card.-form
+                                        .card_header
+                                            .card_title Комментарий к заказу
+                                        .card_content.card_pd
+                                            .card_row
+                                                .form-group
+                                                    textarea.form-control.-textarea(rows="6")
                                 .row.-center
                                     button.btn-primary.-large ЗАКАЗАТЬ
             +footer

@@ -10,6 +10,18 @@
 @import "core/helpers";
 
 /*--------------------------------------/
+ Plugins
+--------------------------------------*/
+@import "plugins/swiper";
+@import "plugins/select2";
+@import "../../node_modules/font-awesome/scss/font-awesome";
+@import "../../node_modules/wickedpicker/dist/wickedpicker.min";
+@import "../../node_modules/@fengyuanchen/datepicker/dist/datepicker.min";
+@import "plugins/tipso";
+@import "plugins/mask";
+@import "../../node_modules/select2/dist/css/select2.min";
+
+/*--------------------------------------/
  Base
 --------------------------------------*/
 @import "base/fonts";
@@ -33,16 +45,6 @@
 @import "elements/form-control";
 @import "elements/utilities";
 
-/*--------------------------------------/
- Plugins
---------------------------------------*/
-@import "plugins/swiper";
-@import "plugins/select2";
-@import "../../node_modules/font-awesome/scss/font-awesome";
-@import "../../node_modules/wickedpicker/dist/wickedpicker.min";
-@import "../../node_modules/@fengyuanchen/datepicker/dist/datepicker.min";
-@import "plugins/tipso";
-@import "plugins/mask";
 
 /*--------------------------------------/
  Modules
@@ -80,3 +82,4 @@
 @import "../modules/sitemap/sitemap";
 @import "../modules/feedback/feedback";
 @import "../modules/table/table";
+@import "../modules/form-controls/form-controls";

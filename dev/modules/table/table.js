@@ -1,5 +1,5 @@
 module('highlightTable', function () {
-    var $table = $(this),
+    var $table = $(this).find('[data-js=table]'),
         $cells = $table.find('[data-col*=col]');
 
     $cells.hover(function () {

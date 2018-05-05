@@ -10,10 +10,12 @@ module.exports = {
         "node_modules/tether/dist/js/tether.js",
         "node_modules/tether-drop/dist/js/drop.js",
         "node_modules/tipso/src/tipso.min.js",
-        "dev/js/plugins/masking-input.js"
+        "dev/js/plugins/masking-input.js",
+		"node_modules/select2/dist/js/select2.min.js"
     ],
     main: [
         "dev/js/core/jquery.snippets.js",
+        "dev/js/core/anchors.js",
         "dev/js/core/module.js",
         "dev/js/core/media.js",
         "dev/js/core/main.js",
@@ -56,6 +58,7 @@ module.exports = {
 		"dev/modules/notification/notification.js",
 		"dev/modules/sitemap/sitemap.js",
 		"dev/modules/feedback/feedback.js",
-		"dev/modules/table/table.js"
+		"dev/modules/table/table.js",
+		"dev/modules/form-controls/form-controls.js"
     ]
 };
